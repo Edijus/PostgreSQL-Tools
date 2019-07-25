@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019-05-24 20:07:02.000.291,=C:\Users\Edijs\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2019-05-24 20:38:55.000.088,=C:\Users\Edijs\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2019-05-25 08:52:19.000.645,=C:\Users\Edijs\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2019-05-25 08:52:48.000.213,C:\Users\Edijs\Desktop\pgAdmin\App\pgAdminDaemon\Main.pas=C:\Users\Edijs\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2019-05-25 08:52:48.000.213,C:\Users\Edijs\Desktop\pgAdmin\App\pgAdminDaemon\Main.dfm=C:\Users\Edijs\Documents\Embarcadero\Studio\Projects\Unit3.dfm</Transaction>
+    <Transaction>2019-05-25 08:52:53.000.662,C:\Users\Edijs\Desktop\pgAdmin\App\pgAdminDaemon\pgAdminDaemon.dproj=C:\Users\Edijs\Documents\Embarcadero\Studio\Projects\Project3.dproj</Transaction>
+    <Transaction>2019-05-25 08:53:53.000.274,=C:\Users\Edijs\Desktop\pgAdmin\App\pgAdminDaemon\AHK_Unicode_Implementation.pas</Transaction>
+    <Transaction>2019-05-25 08:53:53.000.279,=C:\Users\Edijs\Desktop\pgAdmin\App\pgAdminDaemon\Core.WndControl.pas</Transaction>
+    <Transaction>2019-06-11 21:49:38.000.703,=C:\Users\Edijs\Desktop\ThriceSoft\Programming\pgAdminDaemon\Unit1.pas</Transaction>
+    <Transaction>2019-06-11 21:51:31.000.388,C:\Users\Edijs\Desktop\ThriceSoft\Programming\pgAdminDaemon\Unit1.pas=C:\Users\Edijs\Desktop\ThriceSoft\Programming\pgAdminDaemon\DBObjectNameForm.pas</Transaction>
+    <Transaction>2019-06-11 21:51:31.000.388,C:\Users\Edijs\Desktop\ThriceSoft\Programming\pgAdminDaemon\Unit1.dfm=C:\Users\Edijs\Desktop\ThriceSoft\Programming\pgAdminDaemon\DBObjectNameForm.dfm</Transaction>
+  </Transactions>
+</BorlandProject>
