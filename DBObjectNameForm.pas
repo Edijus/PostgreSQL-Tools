@@ -41,6 +41,7 @@ type
     procedure eDBObjectKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure lbDBObjectNameKeyPress(Sender: TObject; var Key: Char);
     procedure lbDBObjectNameKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure FormKeyPress(Sender: TObject; var Key: Char);
   private
     { Private declarations }
     FDatabaseObjList: TArray<string>;
@@ -65,6 +66,15 @@ end;
 procedure TfrmDBObjectName.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
   ShowWindow(Application.Handle, SW_SHOW);
+end;
+
+procedure TfrmDBObjectName.FormKeyPress(Sender: TObject; var Key: Char);
+begin
+  if Key = chr(27) {ESC} then
+  begin
+    Key := #0;
+    Self.Close;
+  end;
 end;
 
 procedure TfrmDBObjectName.FormShow(Sender: TObject);

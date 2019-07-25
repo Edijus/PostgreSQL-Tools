@@ -126,7 +126,10 @@ begin
   FDBObjectForm.Left := _WndLeft + 6;
   FDBObjectForm.Top := _WndTop + _WndHeight - FDBObjectForm.Height - 6;
   if FDBObjectForm.ShowModal <> mrOk then
+  begin
+    SetForegroundWindow(_WindowHandle);
     Exit;
+  end;
 
   _DBObject := FDBObjectForm.GetDBObject;
   if _DBObject = '' then
@@ -211,6 +214,20 @@ begin;
   end;
 end;
 
+procedure ProcessHelpCommandLineParam;
+var
+  i: Integer;
+begin
+  for i := 0 to ParamCount do
+  begin
+    if (LowerCase(ParamStr(i)) = '-help') or (LowerCase(ParamStr(i)) = '/help') then
+    begin
+      ShowMessage('Ctrl+Q to type' + sLineBreak + 'SELECT' + sLineBreak + '  *' + sLineBreak + 'FROM' + sLineBreak +
+      sLineBreak + 'Ctrl+Shift+Space for autocompletion');
+    end;
+  end;
+end;
+
 procedure TfrmMain.FormCreate(Sender: TObject);
 const
   VK_Q = $51;
@@ -236,6 +253,7 @@ begin
     if ParamStr(i) = '-t' then
       _CheckIntervalMS := 0;
   end;
+  ProcessHelpCommandLineParam;
 
   if _CheckIntervalMS <= 0 then
     _CheckIntervalMS := 1002;
